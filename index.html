@@ -1,0 +1,577 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="仙剑奇侠传4,2D版">
+    <meta name="keywords" content="仙剑奇侠传4,仙剑，仙剑奇侠传，仙4">
+    <title>Pal4</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/page.css">
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="scripts/data.js"></script>
+    <script type="text/javascript" src="scripts/user.js"></script>
+</head>
+<body>
+
+    <div class="game">
+
+        <!-- 加载完成前显示图片 begin -->
+        <img class="index-load" src="images/load-00.jpg">
+        <!-- 加载完成前显示图片 end -->
+
+        <!-- 开场动画 begin -->
+        <div class="index-video">
+            <video class="video" src="video/video-00.mp4"></video>
+            <button class="btn btn-skip" type="button"><span>按ESC跳过</span></button>
+        </div>
+        <!-- 开场动画 end -->
+
+        <!-- 背景音乐 begin -->
+        <audio class="game-audio audio-00" src="audio/audio-00.mp3" loop="loop" preload="auto"></audio>
+        <!-- 背景音乐 end -->
+
+        <!-- 点击音效 begin -->
+        <audio class="game-audio audio-01" src="audio/audio-01.wav" preload="auto"></audio>
+        <!-- 点击音效 end -->
+
+        <!-- 人物语音 begin -->
+        <audio class="game-audio audio-role" src="audio/role-00.mp3" preload="auto"></audio>
+        <!-- 点击音效 end -->
+
+        <!-- 场景 begin -->
+        <div class="scene scene-a-1">
+            <img src="images/scene-000.jpg">
+            <img src="images/scene-001.jpg">
+        </div>
+        <!-- 场景 end -->
+
+        <!-- 开场白 begin -->
+        <div class="index-info radius-8">
+            <p>十九年前琼华派弟子云天青和夙玉离开琼华，来到青鸾峰。</p>
+            <p>二人在山上成亲并生下一子云天河。没多久，夙玉去世。</p>
+            <p>年幼的云天河并不清楚父母的往事，而父亲云天青也因病去世，只留他一人在山上长大。故事便从这里开始...</p>
+        </div>
+        <!-- 开场白 end -->
+
+        <!-- -------------------------------- 以 -------------------------------- -->
+        <!-- -------------------------------- 下 -------------------------------- -->
+        <!-- -------------------------------- 是 -------------------------------- -->
+        <!-- -------------------------------- 主 -------------------------------- -->
+        <!-- -------------------------------- 界 -------------------------------- -->
+        <!-- -------------------------------- 面 -------------------------------- -->
+
+        <!-- 角色显示 begin -->
+        <div class="head clear_fix">
+            <div class="head-role js-audio-click">
+                <div class="head-role-icon gradual-normal radius-circle">
+                    <img src="images/head-default.png">
+                </div>
+                <h2 class="head-role-name radius-4">加载中...</h2>
+            </div>
+            <div class="head-info gradual-fast radius-4">
+                <ul class="head-info-main">
+                    <li class="head-info-list clear_fix">
+                        <p class="head-info-txt head-info-title">精</p>
+                        <div class="head-info-bar radius-max">
+                            <span class="head-info-bar-1"></span>
+                        </div>
+                        <p class="head-info-txt head-info-hp">计算中...</p>
+                    </li>
+                    <li class="head-info-list clear_fix">
+                        <p class="head-info-txt head-info-title">神</p>
+                        <div class="head-info-bar radius-max">
+                            <span class="head-info-bar-2"></span>
+                        </div>
+                        <p class="head-info-txt head-info-mp">计算中...</p>
+                    </li>
+                    <li class="head-info-list clear_fix">
+                        <p class="head-info-txt head-info-title">气</p>
+                        <div class="head-info-bar radius-max">
+                            <span class="head-info-bar-3"></span>
+                        </div>
+                        <p class="head-info-txt head-info-ep">计算中...</p>
+                    </li>
+                </ul>
+            </div>
+            <ul class="head-queue">
+                <li class="head-queue-item radius-circle gradual-normal head-item-change js-audio-click">
+                    <img src="images/head-00.jpg">
+                </li>
+                <li class="head-queue-item radius-circle gradual-normal head-item-change js-audio-click">
+                    <img src="images/head-01.jpg">
+                </li>
+                <li class="head-queue-item radius-circle gradual-normal head-item-change js-audio-click">
+                    <img src="images/head-02.jpg">
+                </li>
+                <li class="head-queue-item radius-circle gradual-normal head-item-change js-audio-click">
+                    <img src="images/head-03.jpg">
+                </li>
+            </ul>
+        </div>
+        <!-- 角色显示 end -->
+
+        <!-- 当前区域 begin -->
+        <div class="area">
+            <p class="area-title radius-4">青鸾峰</p>
+            <div class="area-txt radius-4">从小居住在黄山青鸾峰上、从未下山过的少年 云天河，某日遇到一名闯上山来寻找剑仙的少女 韩菱纱。两人误打误撞之下闯入云天河父母的神秘墓室，并在无意间令墓室崩塌。</div>
+        </div>
+        <!-- 当前区域 end -->
+
+        <!-- 系统选项 begin -->
+        <div class="option clear_fix">
+            <div class="option-head radius-4 js-audio-click">
+                <i class="gradual-fast"></i>
+            </div>
+            <div class="option-main radius-4">
+                <ul class="option-bar gradual-fast clear_fix">
+                    <li class="option-list option-list-1 js-audio-click">
+                        <i class="gradual-fast gray"></i>
+                    </li>
+                    <li class="option-list option-list-2 js-audio-click">
+                        <i class="gradual-fast gray"></i>
+                    </li>
+                    <li class="option-list option-list-3 js-audio-click">
+                        <i class="gradual-fast gray"></i>
+                    </li>
+                    <li class="option-list option-list-4 js-audio-click">
+                        <i class="gradual-fast gray"></i>
+                    </li>
+                    <li class="option-list option-list-5 js-audio-click">
+                        <i class="gradual-fast gray"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 系统选项 end -->
+
+        <div class="option-frame">
+
+            <!-- 人物状态 begin -->
+            <div class="status option-fade shadow-2 radius-8">
+                <ul class="status-main clear_fix">
+                    <li class="status-list">
+                        <div class="status-head">
+                            <div class="status-thumb">
+                                <img src="images/head-04.jpg">
+                            </div>
+                            <span class="status-level status-level-2 radius-circle">1</span>
+                        </div>
+                        <div class="status-info">
+                            <ul class="head-info-main">
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">精</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-1"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-hp">120/130</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">神</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-2"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-mp">60/70</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">气</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-3"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-ep">90/100</p>
+                                </li>
+                            </ul>
+                            <div class="status-exp">
+                                <p class="status-exp-txt">经验值</p>
+                                <p class="status-exp-current">60exp</p>
+                                <p class="status-exp-txt">升级所需经验值</p>
+                                <p class="status-exp-need">60exp</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="status-list">
+                        <div class="status-head">
+                            <div class="status-thumb">
+                                <img src="images/head-05.jpg">
+                            </div>
+                            <span class="status-level status-level-1 radius-circle">1</span>
+                        </div>
+                        <div class="status-info">
+                            <ul class="head-info-main">
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">精</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-1"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-hp">110/160</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">神</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-2"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-mp">55/60</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">气</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-3"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-ep">94/100</p>
+                                </li>
+                            </ul>
+                            <div class="status-exp">
+                                <p class="status-exp-txt">经验值</p>
+                                <p class="status-exp-current">60exp</p>
+                                <p class="status-exp-txt">升级所需经验值</p>
+                                <p class="status-exp-need">60exp</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="status-list">
+                        <div class="status-head">
+                            <div class="status-thumb">
+                                <img src="images/head-06.jpg">
+                            </div>
+                            <span class="status-level status-level-3 radius-circle">1</span>
+                        </div>
+                        <div class="status-info">
+                            <ul class="head-info-main">
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">精</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-1"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-hp">115/120</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">神</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-2"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-mp">60/70</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">气</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-3"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-ep">90/100</p>
+                                </li>
+                            </ul>
+                            <div class="status-exp">
+                                <p class="status-exp-txt">经验值</p>
+                                <p class="status-exp-current">60exp</p>
+                                <p class="status-exp-txt">升级所需经验值</p>
+                                <p class="status-exp-need">60exp</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="status-list">
+                        <div class="status-head">
+                            <div class="status-thumb">
+                                <img src="images/head-07.jpg">
+                            </div>
+                            <span class="status-level status-level-4 radius-circle">1</span>
+                        </div>
+                        <div class="status-info">
+                            <ul class="head-info-main">
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">精</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-1"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-hp">115/120</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">神</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-2"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-mp">60/70</p>
+                                </li>
+                                <li class="head-info-list clear_fix">
+                                    <p class="head-info-txt head-info-title">气</p>
+                                    <div class="head-info-bar radius-max">
+                                        <span class="head-info-bar-3"></span>
+                                    </div>
+                                    <p class="head-info-txt head-info-ep">90/100</p>
+                                </li>
+                            </ul>
+                            <div class="status-exp">
+                                <p class="status-exp-txt">经验值</p>
+                                <p class="status-exp-current">60exp</p>
+                                <p class="status-exp-txt">升级所需经验值</p>
+                                <p class="status-exp-need">60exp</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <i class="option-fade-cancel radius-circle gradual-fast js-audio-click"></i>
+            </div>
+            <!-- 人物状态 end -->
+
+            <!-- 物品栏 begin -->
+            <div class="item option-fade shadow-2 radius-8">
+                <div class="item-main clear_fix">
+                    <div class="item-head">
+                        <h2 class="item-title"></h2>
+                        <div class="item-thumb">
+                            <img>
+                        </div>
+                        <span class="item-shadow shadow-2 radius-circle"></span>
+                    </div>
+                    <ul class="item-description radius-8">
+                        <li class="item-description-1">
+                            <h2 class="item-description-title">物品描述：</h2>
+                            <p class="item-description-txt"></p>
+                        </li>
+                        <li class="item-description-2">
+                            <h2 class="item-description-title">物品功效</h2>
+                            <p class="item-description-txt"></p>
+                        </li>
+                    </ul>
+                    <div class="item-collection radius-8">
+                        <ul class="item-nav">
+                            <li class="item-nav-list item-nav-active js-audio-click">
+                                <p>恢复</p>
+                            </li>
+                            <li class="item-nav-list js-audio-click">
+                                <p>攻击</p>
+                            </li>
+                            <li class="item-nav-list js-audio-click">
+                                <p>辅助</p>
+                            </li>
+                            <li class="item-nav-list js-audio-click">
+                                <p>任务</p>
+                            </li>
+                        </ul>
+                        <div class="item-box-frame">
+                            <ul class="item-box item-type-1 clear_fix">
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-1">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-2">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-3">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                            </ul>
+                            <ul class="item-box item-type-2 clear_fix">
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-1">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-2">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-3">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                            </ul>
+                            <ul class="item-box item-type-3 clear_fix">
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-1">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-2">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-3">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                            </ul>
+                            <ul class="item-box item-type-4 clear_fix">
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-1">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-2">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                                <li class="item-list radius-4">
+                                    <div class="item-icon item-icon-3">
+                                        <img>
+                                    </div>
+                                    <span class="item-count"></span>
+                                    <h3 class="item-name"></h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <i class="option-fade-cancel radius-circle gradual-fast js-audio-click"></i>
+            </div>
+            <!-- 物品栏 end -->
+
+            <!-- 装备栏 begin -->
+            <div class="equipment option-fade shadow-2 radius-8">
+                <i class="option-fade-cancel radius-circle gradual-fast js-audio-click"></i>
+                <div class="equip-role-frame">
+                    <div class="equip-role">
+                        <img src="images/role-00.jpg">
+                    </div>
+                    <ul class="equip-arrow">
+                        <li class="equip-arrow-left rotate-2"></li>
+                        <li class="equip-arrow-right"></li>
+                    </ul>
+                </div>
+                <div class="equip-info">
+                    <div class="equip-info-head radius-8">
+                        <h2 class="equip-name"></h2>
+                        <div class="equip-thumb">
+                            <img>
+                        </div>
+                    </div>
+                    <ul class="equip-description radius-8">
+                        <li class="equip-description-1">
+                            <h3 class="equip-description-title">装备简介</h3>
+                            <p class="equip-description-txt"></p>
+                        </li>
+                        <li class="equip-description-2">
+                            <h3 class="equip-description-title">装备效果</h3>
+                            <p class="equip-description-txt"></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equip-option">
+                    <div class="equip-main">
+                        <ul class="equip-nav clear_fix">
+                            <li class="equip-nav-list equip-nav-active js-audio-click">武器</li>
+                            <li class="equip-nav-list js-audio-click">头部</li>
+                            <li class="equip-nav-list js-audio-click">身体</li>
+                            <li class="equip-nav-list js-audio-click">足部</li>
+                        </ul>
+                        <div class="equip-box-frame radius-8">
+                            <ul class="equip-box equip-type-1 clear_fix">
+                                <li class="equip-box-list equip-box-active radius-4">
+                                    <p class="equip-box-name fl"></p>
+                                    <p class="equip-box-effect fr">攻+<span></span></p>
+                                </li>
+                                <li class="equip-box-list radius-4">
+                                    <p class="equip-box-name fl"></p>
+                                    <p class="equip-box-effect fr">攻+<span></span></p>
+                                </li>
+                                <li class="equip-box-list radius-4">
+                                    <p class="equip-box-name fl"></p>
+                                    <p class="equip-box-effect fr">攻+<span></span></p>
+                                </li>
+                            </ul>
+                            <ul class="equip-box equip-type-2 clear_fix">
+                                <li class="equip-box-list equip-box-active radius-4">
+                                    <p class="equip-box-name fl"></p>
+                                    <p class="equip-box-effect fr">防+<span></span></p>
+                                </li>
+                                <li class="equip-box-list radius-4">
+                                    <p class="equip-box-name fl"></p>
+                                    <p class="equip-box-effect fr">防+<span></span></p>
+                                </li>
+                            </ul>
+                            <ul class="equip-box equip-type-3 clear_fix">
+                                <li class="equip-box-list equip-box-active radius-4">
+                                    <p class="equip-box-name fl"></p>
+                                    <p class="equip-box-effect fr">防+<span></span></p>
+                                </li>
+                            </ul>
+                            <ul class="equip-box equip-type-4 clear_fix">
+                                <li class="equip-box-list equip-box-active radius-4">
+                                    <p class="equip-box-name fl"></p>
+                                    <p class="equip-box-effect fr">防+<span></span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equip-status radius-8">
+                        <ul class="equip-up clear_fix">
+                            <li class="equip-up-list">
+                                <p class="equip-up-title fl">武器</p>
+                                <p class="equip-up-name fl radius-4"></p>
+                            </li>
+                            <li class="equip-up-list">
+                                <p class="equip-up-title fl">头部</p>
+                                <p class="equip-up-name fl radius-4"></p>
+                            </li>
+                            <li class="equip-up-list">
+                                <p class="equip-up-title fl">身体</p>
+                                <p class="equip-up-name fl radius-4"></p>
+                            </li>
+                            <li class="equip-up-list">
+                                <p class="equip-up-title fl">足部</p>
+                                <p class="equip-up-name fl radius-4"></p>
+                            </li>
+                        </ul>
+                        <ul class="equip-value clear_fix">
+                            <li class="equip-value-list equip-value-1 radius-circle"></li>
+                            <li class="equip-value-list equip-value-2 radius-circle"></li>
+                            <li class="equip-value-list equip-value-3 radius-circle"></li>
+                            <li class="equip-value-list equip-value-4 radius-circle"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 装备栏 end -->
+
+            <!-- 任务日志 begin -->
+            <div class="mission option-fade shadow-2 radius-8">
+                <i class="option-fade-cancel radius-circle gradual-fast js-audio-click"></i>
+            </div>
+            <!-- 任务日志 end -->
+
+            <!-- 系统选项 begin -->
+            <div class="setting option-fade shadow-2 radius-8">
+                <i class="option-fade-cancel radius-circle gradual-fast js-audio-click"></i>
+            </div>
+            <!-- 系统选项 end -->
+
+        </div>
+
+        <!-- 全屏遮罩 begin -->
+        <div class="screen"></div>
+        <!-- 全屏遮罩 end -->
+
+    </div>
+
+</body>
+</html>

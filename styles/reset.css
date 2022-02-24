@@ -1,0 +1,57 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,button,input,select,option,textarea{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color:inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family:"Microsoft YaHei",Helvetica,Arial sans-serif;
+}
+body {
+    height:100%;
+    font-size:16px;
+    line-height: 1;
+    overflow: hidden;
+}
+ol, ul ,li,dt,dd,dl{
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+a{
+    display: block;
+    cursor:pointer;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+button{
+    box-shadow: none;
+    background:none;
+    cursor: pointer;
+}
+i,header,nav,article,section,aside,footer,video{
+    display: block;
+}
